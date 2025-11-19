@@ -24,8 +24,8 @@ class ExampleServiceProvider2
     }
     public function boot()
     {
-        echo "im boot from ExampleServiceProvider2";
-        echo $this->app->make("example.service")->sayHello();
+        // echo "im boot from ExampleServiceProvider2";
+        // echo $this->app->make("example.service")->sayHello();
         //here you can add the code that you want to run after the service is registered
         //for example, you can add the code that you want to run after the service is registered
         // for example , you can extend the functionality of the service by adding a new method or a new property

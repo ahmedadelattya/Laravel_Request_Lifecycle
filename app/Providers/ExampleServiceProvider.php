@@ -24,7 +24,7 @@ class ExampleServiceProvider
     }
     public function boot()
     {
-        echo "im boot from ExampleServiceProvider";
+        // echo "im boot from ExampleServiceProvider";
         //here you can add the code that you want to run after the service is registered
         //for example, you can add the code that you want to run after the service is registered
         // for example , you can extend the functionality of the service by adding a new method or a new property
