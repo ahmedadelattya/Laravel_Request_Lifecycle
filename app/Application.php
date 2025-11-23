@@ -15,7 +15,7 @@ class Application
     public function __construct()
     {
         $this->registerBaseBindings();
-        // phase 3 : register the providers
+        // phase_3 : register the providers
         $this->registerProviders(new ExampleServiceProvider($this));
         $this->registerProviders(new ExampleServiceProvider2($this));
     }
@@ -28,12 +28,12 @@ class Application
     public function registerProviders($provider)
     {
         $this->providers[] = $provider;
-        $provider->register(); // phase 4 : register the services
+        $provider->register(); // phase_4 : register the services
     }
     public function bootProviders()
     {
         foreach ($this->providers as $provider) {
-            $provider->boot(); // phase 5 : boot the services
+            $provider->boot(); // phase_5 : boot the services
         }
         
     }

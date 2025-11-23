@@ -25,7 +25,7 @@ class Router
             $action = $this->routes[$method][$path]['uses'];
             list($controller, $method) = explode('@', $action);
             $controller = "App\Http\Controllers\\{$controller}";
-            return (new $controller())->{$method}($request); // phase 7 : dispatch the request to the controller
+            return (new $controller())->{$method}($request); // phase_7 : dispatch the request to the controller
         }
         return new Response("404 Not Found", 404);
     }

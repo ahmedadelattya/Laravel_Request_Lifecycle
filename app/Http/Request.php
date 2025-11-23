@@ -4,6 +4,11 @@ namespace App\Http;
 
 class Request
 {
+    public $data;
+    public function __construct()
+    {
+        $this->data = $_GET['param'] ?? '';
+    }
 
     public function method()
     {

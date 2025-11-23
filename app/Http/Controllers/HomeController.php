@@ -9,7 +9,8 @@ class HomeController
 {
     public function index(Request $request)
     {
-        print_r($request->uri());
-        return new Response("Response from HomeController@index");
+        // print_r($request->uri());
+        echo "Hello from HomeController@index {$request->data} <br>";
+        return new Response("Response from HomeController@index {$request->data} <br>");
     }
 }
